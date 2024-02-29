@@ -61,8 +61,8 @@ install(TARGETS nanobind_example_ext LIBRARY DESTINATION nanobind_example)
 nanobind_add_stub(
     nanobind_example_ext_stubgen
     INSTALL_TIME
-    MODULE nanobind_example_ext
-    OUTPUT ${SKBUILD_PLATLIB_DIR}/nanobind_example_ext.pyi
-    MARKER_FILE "${SKBUILD_PLATLIB_DIR}/py.typed"
+    MODULE nanobind_example.nanobind_example_ext
+    OUTPUT ${SKBUILD_PLATLIB_DIR}/nanobind_example/nanobind_example_ext.pyi
+    MARKER_FILE "${SKBUILD_PLATLIB_DIR}/nanobind_example/py.typed"
     VERBOSE
 )
